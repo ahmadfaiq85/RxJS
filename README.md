@@ -1,3 +1,3 @@
 # RxJS
 
-Getting started with RxJS
+Getting started with RxJS.
