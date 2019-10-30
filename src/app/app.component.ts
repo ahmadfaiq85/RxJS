@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CreateObservableService } from './create-observable.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'LearningRxJS';
+
+  constructor(observableService: CreateObservableService) {
+    observableService.createObservableSeparate();
+    observableService.createObservableArrow();
+  }
 }
